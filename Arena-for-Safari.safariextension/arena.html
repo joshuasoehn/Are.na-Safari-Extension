@@ -1,0 +1,8 @@
+<script>
+  // When the toolbar item is tapped, add the bookmarklet JS
+  safari.application.addEventListener("command", function(event) {
+    const window = event.target.browserWindow
+    const tab = window.activeTab
+    tab.page.dispatchMessage("bookmarklet", {});
+  }, false);
+</script>
