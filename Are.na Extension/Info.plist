@@ -44,16 +44,12 @@
 			<key>Image</key>
 			<string>ToolbarItemIcon.pdf</string>
 			<key>Label</key>
-			<string>Your Button</string>
+			<string>Add to Are.na</string>
 		</dict>
 		<key>SFSafariWebsiteAccess</key>
 		<dict>
-			<key>Allowed Domains</key>
-			<array>
-				<string>*.webkit.org</string>
-			</array>
 			<key>Level</key>
-			<string>Some</string>
+			<string>All</string>
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
