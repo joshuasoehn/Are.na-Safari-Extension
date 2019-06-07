@@ -12,8 +12,6 @@
 		6051170222AA820E00E9F03B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6051170022AA820E00E9F03B /* MainMenu.xib */; };
 		6051171122AA838F00E9F03B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6051171022AA838F00E9F03B /* Cocoa.framework */; };
 		6051171422AA838F00E9F03B /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6051171322AA838F00E9F03B /* SafariExtensionHandler.swift */; };
-		6051171622AA838F00E9F03B /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6051171522AA838F00E9F03B /* SafariExtensionViewController.swift */; };
-		6051171922AA838F00E9F03B /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6051171722AA838F00E9F03B /* SafariExtensionViewController.xib */; };
 		6051171C22AA838F00E9F03B /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 6051171B22AA838F00E9F03B /* script.js */; };
 		6051171E22AA838F00E9F03B /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6051171D22AA838F00E9F03B /* ToolbarItemIcon.pdf */; };
 		6051172222AA838F00E9F03B /* Are.na Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6051170E22AA838F00E9F03B /* Are.na Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -53,8 +51,6 @@
 		6051170E22AA838F00E9F03B /* Are.na Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Are.na Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6051171022AA838F00E9F03B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6051171322AA838F00E9F03B /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
-		6051171522AA838F00E9F03B /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
-		6051171822AA838F00E9F03B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		6051171A22AA838F00E9F03B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6051171B22AA838F00E9F03B /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		6051171D22AA838F00E9F03B /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
@@ -123,8 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				6051171322AA838F00E9F03B /* SafariExtensionHandler.swift */,
-				6051171522AA838F00E9F03B /* SafariExtensionViewController.swift */,
-				6051171722AA838F00E9F03B /* SafariExtensionViewController.xib */,
 				6051171A22AA838F00E9F03B /* Info.plist */,
 				6051171B22AA838F00E9F03B /* script.js */,
 				6051171D22AA838F00E9F03B /* ToolbarItemIcon.pdf */,
@@ -224,7 +218,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6051171E22AA838F00E9F03B /* ToolbarItemIcon.pdf in Resources */,
-				6051171922AA838F00E9F03B /* SafariExtensionViewController.xib in Resources */,
 				6051171C22AA838F00E9F03B /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,7 +237,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6051171622AA838F00E9F03B /* SafariExtensionViewController.swift in Sources */,
 				6051171422AA838F00E9F03B /* SafariExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,14 +258,6 @@
 				6051170122AA820E00E9F03B /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		6051171722AA838F00E9F03B /* SafariExtensionViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6051171822AA838F00E9F03B /* Base */,
-			);
-			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
