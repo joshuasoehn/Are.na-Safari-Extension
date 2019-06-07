@@ -10,7 +10,38 @@
 		605116FD22AA820C00E9F03B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605116FC22AA820C00E9F03B /* AppDelegate.swift */; };
 		605116FF22AA820E00E9F03B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 605116FE22AA820E00E9F03B /* Assets.xcassets */; };
 		6051170222AA820E00E9F03B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6051170022AA820E00E9F03B /* MainMenu.xib */; };
+		6051171122AA838F00E9F03B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6051171022AA838F00E9F03B /* Cocoa.framework */; };
+		6051171422AA838F00E9F03B /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6051171322AA838F00E9F03B /* SafariExtensionHandler.swift */; };
+		6051171622AA838F00E9F03B /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6051171522AA838F00E9F03B /* SafariExtensionViewController.swift */; };
+		6051171922AA838F00E9F03B /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6051171722AA838F00E9F03B /* SafariExtensionViewController.xib */; };
+		6051171C22AA838F00E9F03B /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 6051171B22AA838F00E9F03B /* script.js */; };
+		6051171E22AA838F00E9F03B /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6051171D22AA838F00E9F03B /* ToolbarItemIcon.pdf */; };
+		6051172222AA838F00E9F03B /* Are.na Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6051170E22AA838F00E9F03B /* Are.na Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6051172022AA838F00E9F03B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 605116F122AA820C00E9F03B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6051170D22AA838F00E9F03B;
+			remoteInfo = "Are.na Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6051172622AA838F00E9F03B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6051172222AA838F00E9F03B /* Are.na Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		605116F922AA820C00E9F03B /* Are.na for Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Are.na for Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +50,15 @@
 		6051170122AA820E00E9F03B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		6051170322AA820E00E9F03B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6051170422AA820E00E9F03B /* Are_na_for_Safari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Are_na_for_Safari.entitlements; sourceTree = "<group>"; };
+		6051170E22AA838F00E9F03B /* Are.na Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Are.na Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6051171022AA838F00E9F03B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6051171322AA838F00E9F03B /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		6051171522AA838F00E9F03B /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		6051171822AA838F00E9F03B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		6051171A22AA838F00E9F03B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6051171B22AA838F00E9F03B /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		6051171D22AA838F00E9F03B /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		6051171F22AA838F00E9F03B /* Are_na_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Are_na_Extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +69,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6051170B22AA838F00E9F03B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6051171122AA838F00E9F03B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				605116FB22AA820C00E9F03B /* Are.na for Safari */,
+				6051171222AA838F00E9F03B /* Are.na Extension */,
+				6051170F22AA838F00E9F03B /* Frameworks */,
 				605116FA22AA820C00E9F03B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				605116F922AA820C00E9F03B /* Are.na for Safari.app */,
+				6051170E22AA838F00E9F03B /* Are.na Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +111,28 @@
 			path = "Are.na for Safari";
 			sourceTree = "<group>";
 		};
+		6051170F22AA838F00E9F03B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6051171022AA838F00E9F03B /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6051171222AA838F00E9F03B /* Are.na Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6051171322AA838F00E9F03B /* SafariExtensionHandler.swift */,
+				6051171522AA838F00E9F03B /* SafariExtensionViewController.swift */,
+				6051171722AA838F00E9F03B /* SafariExtensionViewController.xib */,
+				6051171A22AA838F00E9F03B /* Info.plist */,
+				6051171B22AA838F00E9F03B /* script.js */,
+				6051171D22AA838F00E9F03B /* ToolbarItemIcon.pdf */,
+				6051171F22AA838F00E9F03B /* Are_na_Extension.entitlements */,
+			);
+			path = "Are.na Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,15 +143,34 @@
 				605116F522AA820C00E9F03B /* Sources */,
 				605116F622AA820C00E9F03B /* Frameworks */,
 				605116F722AA820C00E9F03B /* Resources */,
+				6051172622AA838F00E9F03B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6051172122AA838F00E9F03B /* PBXTargetDependency */,
 			);
 			name = "Are.na for Safari";
 			productName = "Are.na for Safari";
 			productReference = 605116F922AA820C00E9F03B /* Are.na for Safari.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6051170D22AA838F00E9F03B /* Are.na Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6051172322AA838F00E9F03B /* Build configuration list for PBXNativeTarget "Are.na Extension" */;
+			buildPhases = (
+				6051170A22AA838F00E9F03B /* Sources */,
+				6051170B22AA838F00E9F03B /* Frameworks */,
+				6051170C22AA838F00E9F03B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Are.na Extension";
+			productName = "Are.na Extension";
+			productReference = 6051170E22AA838F00E9F03B /* Are.na Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -91,6 +183,9 @@
 				ORGANIZATIONNAME = "Joshua Söhn";
 				TargetAttributes = {
 					605116F822AA820C00E9F03B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					6051170D22AA838F00E9F03B = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
@@ -109,6 +204,7 @@
 			projectRoot = "";
 			targets = (
 				605116F822AA820C00E9F03B /* Are.na for Safari */,
+				6051170D22AA838F00E9F03B /* Are.na Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +219,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6051170C22AA838F00E9F03B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6051171E22AA838F00E9F03B /* ToolbarItemIcon.pdf in Resources */,
+				6051171922AA838F00E9F03B /* SafariExtensionViewController.xib in Resources */,
+				6051171C22AA838F00E9F03B /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -134,7 +240,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6051170A22AA838F00E9F03B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6051171622AA838F00E9F03B /* SafariExtensionViewController.swift in Sources */,
+				6051171422AA838F00E9F03B /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6051172122AA838F00E9F03B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6051170D22AA838F00E9F03B /* Are.na Extension */;
+			targetProxy = 6051172022AA838F00E9F03B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6051170022AA820E00E9F03B /* MainMenu.xib */ = {
@@ -143,6 +266,14 @@
 				6051170122AA820E00E9F03B /* Base */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		6051171722AA838F00E9F03B /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6051171822AA838F00E9F03B /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -266,6 +397,7 @@
 		6051170822AA820E00E9F03B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Are.na for Safari/Are_na_for_Safari.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -284,6 +416,7 @@
 		6051170922AA820E00E9F03B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Are.na for Safari/Are_na_for_Safari.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +428,42 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "JS.Are-na-for-Safari";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6051172422AA838F00E9F03B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Are.na Extension/Are_na_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Are.na Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "JS.Are-na-for-Safari.Are-na-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6051172522AA838F00E9F03B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Are.na Extension/Are_na_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Are.na Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "JS.Are-na-for-Safari.Are-na-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -316,6 +485,15 @@
 			buildConfigurations = (
 				6051170822AA820E00E9F03B /* Debug */,
 				6051170922AA820E00E9F03B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6051172322AA838F00E9F03B /* Build configuration list for PBXNativeTarget "Are.na Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6051172422AA838F00E9F03B /* Debug */,
+				6051172522AA838F00E9F03B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
