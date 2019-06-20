@@ -715,6 +715,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="openSafari:" target="Voe-Tx-rLC" id="C0b-Kx-Sy5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>

@@ -23,11 +23,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
     
-//    func enableExtension () {
-//        SFSafariApplication.showPreferencesForExtension(withIdentifier: ) {
-//            (error) in NSLog("Error \(String(describing: error))")
-//        }
-//    }
+    @IBAction func openSafari(_ sender: NSButton) {
+        SFSafariApplication.showPreferencesForExtension(withIdentifier: "JS.Are-na-for-Safari.Are-na-Extension") {
+            (error) in NSLog("Error \(String(describing: error))")
+        }
+    }
 
 
 }
