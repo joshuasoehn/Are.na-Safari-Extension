@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -10,8 +11,8 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application" customClass="NSApplication"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target">
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Are_na_for_Safari" customModuleProvider="target">
             <connections>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
@@ -681,12 +682,71 @@
         <window title="Are.na for Safari" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <rect key="contentRect" x="335" y="390" width="480" height="264"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="264"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="lUb-jx-Zt3">
+                        <rect key="frame" x="123" y="25" width="234" height="215"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bkD-nD-MNk">
+                                <rect key="frame" x="68" y="97" width="98" height="98"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="256" id="XWY-QS-yjJ"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gxT-Wp-1Rb">
+                                <rect key="frame" x="18" y="58" width="198" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="04g-PN-1Og"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Are.na for Safari" id="mll-O9-FjT">
+                                    <font key="font" metaFont="systemSemibold" size="26"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3T4-KV-ovl">
+                                <rect key="frame" x="42" y="13" width="152" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="qSg-JN-qqY"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Activate Extension" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="iG0-fy-bZZ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="gxT-Wp-1Rb" firstAttribute="top" secondItem="bkD-nD-MNk" secondAttribute="bottom" constant="8" symbolic="YES" id="5Js-py-ULJ"/>
+                            <constraint firstItem="3T4-KV-ovl" firstAttribute="top" secondItem="gxT-Wp-1Rb" secondAttribute="bottom" constant="17" id="819-rH-itL"/>
+                            <constraint firstAttribute="height" constant="215" id="FQO-HJ-Awq"/>
+                            <constraint firstAttribute="width" constant="234" id="Nwg-df-Rpg"/>
+                            <constraint firstItem="3T4-KV-ovl" firstAttribute="leading" secondItem="lUb-jx-Zt3" secondAttribute="leading" constant="48" id="PMR-za-yxi"/>
+                            <constraint firstAttribute="bottom" secondItem="3T4-KV-ovl" secondAttribute="bottom" constant="20" symbolic="YES" id="VwF-gd-YvK"/>
+                            <constraint firstItem="bkD-nD-MNk" firstAttribute="centerX" secondItem="gxT-Wp-1Rb" secondAttribute="centerX" id="Z7M-WH-EK9"/>
+                            <constraint firstItem="bkD-nD-MNk" firstAttribute="leading" secondItem="lUb-jx-Zt3" secondAttribute="leading" constant="68" id="lAV-0F-YlL"/>
+                            <constraint firstItem="gxT-Wp-1Rb" firstAttribute="leading" secondItem="lUb-jx-Zt3" secondAttribute="leading" constant="20" symbolic="YES" id="olI-2i-50T"/>
+                            <constraint firstItem="bkD-nD-MNk" firstAttribute="top" secondItem="lUb-jx-Zt3" secondAttribute="top" constant="20" symbolic="YES" id="rd7-cq-AC0"/>
+                            <constraint firstAttribute="trailing" secondItem="gxT-Wp-1Rb" secondAttribute="trailing" constant="20" symbolic="YES" id="te6-Qf-EtP"/>
+                        </constraints>
+                    </customView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lUb-jx-Zt3" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="7zt-yR-6gs"/>
+                    <constraint firstItem="lUb-jx-Zt3" firstAttribute="centerY" secondItem="EiT-Mj-1SZ" secondAttribute="centerY" id="dNx-gP-G0m"/>
+                </constraints>
             </view>
+            <point key="canvasLocation" x="140" y="-87"/>
         </window>
+        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="vW6-n6-wDa">
+            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="2RN-Fc-fB1"/>
+            <point key="canvasLocation" x="472" y="27"/>
+        </imageView>
     </objects>
+    <resources>
+        <image name="256" width="256" height="256"/>
+    </resources>
 </document>

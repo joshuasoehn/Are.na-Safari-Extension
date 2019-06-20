@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6014BED922B173B9006EE991 /* 256@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6014BED822B173B9006EE991 /* 256@2x.png */; };
 		605116FD22AA820C00E9F03B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605116FC22AA820C00E9F03B /* AppDelegate.swift */; };
 		605116FF22AA820E00E9F03B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 605116FE22AA820E00E9F03B /* Assets.xcassets */; };
 		6051170222AA820E00E9F03B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6051170022AA820E00E9F03B /* MainMenu.xib */; };
@@ -42,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6014BED822B173B9006EE991 /* 256@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "256@2x.png"; path = "../../../Desktop/Arena App Icon/256@2x.png"; sourceTree = "<group>"; };
 		605116F922AA820C00E9F03B /* Are.na for Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Are.na for Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		605116FC22AA820C00E9F03B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		605116FE22AA820E00E9F03B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		605116FB22AA820C00E9F03B /* Are.na for Safari */ = {
 			isa = PBXGroup;
 			children = (
+				6014BED822B173B9006EE991 /* 256@2x.png */,
 				605116FC22AA820C00E9F03B /* AppDelegate.swift */,
 				605116FE22AA820E00E9F03B /* Assets.xcassets */,
 				6051170022AA820E00E9F03B /* MainMenu.xib */,
@@ -208,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6014BED922B173B9006EE991 /* 256@2x.png in Resources */,
 				605116FF22AA820E00E9F03B /* Assets.xcassets in Resources */,
 				6051170222AA820E00E9F03B /* MainMenu.xib in Resources */,
 			);
