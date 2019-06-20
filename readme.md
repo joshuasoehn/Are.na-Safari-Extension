@@ -1,4 +1,4 @@
-# Are.na for safari
+# Are.na Extension for Safari
 
 ![](screenshot/extension-screenshot.png)
 
